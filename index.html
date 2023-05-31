@@ -26,25 +26,39 @@
            
             margin: 0px;
             padding: 0px;
-            box-sizing: border-box;
-        }
-
-        Body {
-            min-height: 100vh;
             font-family: Arial, Helvetica, sans-serif;
-            height: 100vh;        
-            background-color: rgb(255, 255, 255);
-            background-image: url('imagens/fundo0.png');
-           
-            background-size: cover;
-            background-repeat: no-repeat;
-            overflow:hidde;
-            
+        }
+
+        html, Body {
+            height: 100vh;  
+            width: 100vw;      
+            background-color: rgb(255, 255, 255);     
             
         }
 
+        body {
+            background: url('imagens/fundo0.png') no-repeat top center;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        main {
+            position:relative;
+            height: 100vh;
+        }
         
-        
+        article#dog {
+            position: absolute;
+            top: 70%;
+            left: 70%;
+            transform: translate(-70%, -70%);
+
+            height: 553px;
+            width: 400px;
+            
+            
+
+        }
        
             
         
@@ -73,38 +87,23 @@
             text-align: start;
             padding-top: 20px;
         }
-
-        img {
-           position: relative;
-           background-repeat: no-repeat;
-           background-size:100% 100%;
-           height: auto;
-           width: auto;
-           left: 50%;
-           bottom: -53px;
-           overflow:hidden;
-
-        
-     
-          
-        }
-
-        
       
-    
-            
     </style>
 </head>
 <body>
-        <article id="titulo">
-            <h1>Como <br> cuidar <br> do  seu</h1>
-            <h1 class="totó">Totó<h1>
-        </article>
-        <article id="dog">
+        <main>
+            <article id="titulo">
+                <h1>Como <br> cuidar <br> do  seu</h1>
+                <h1 class="totó">Totó<h1>
+            </article>
+            <article id="dog">
+            <picture>
         
-
-
-        </article>
+                <source media="(max-width: 600px )" srcset="imagens/cachorrot.png" type="">
+                <img src="imagens/cachorrom.png" alt="">
+            </picture>
+            </article>
+        </main>
        
 </body>
 </html>
